@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import TodoItem from "../TodoItem/TodoItem";
 export default function InputComponent() {
   //initializing input state variables
   const [input, setInput] = useState("");
@@ -24,7 +24,9 @@ export default function InputComponent() {
         />
         <button type="submit">Add</button>
       </form>
-      {todos}
+      {todos.map((item, index) => (
+        <TodoItem key={index} item={item} />
+      ))}
     </div>
   );
 }
