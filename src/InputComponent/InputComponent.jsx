@@ -3,9 +3,15 @@ import { useState } from "react";
 export default function InputComponent() {
   //initializing input state variables
   const [input, setInput] = useState("");
+  //displaying user enterd todos
+  const [todos, setTodos] = useState([]);
   //function prevents refreshing of the page when user presses Add button
   function handleSubmit(e) {
     e.preventDefault();
+    //spread operator lets save previous inputs (todos) and create new inputs
+    setTodos([...todos, input]);
+    //after submitting todo, the input must be empty
+    setInput("");
   }
   return (
     <div>
@@ -18,6 +24,7 @@ export default function InputComponent() {
         />
         <button type="submit">Add</button>
       </form>
+      {todos}
     </div>
   );
 }
