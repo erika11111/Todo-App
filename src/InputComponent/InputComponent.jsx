@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TodoItem from "../TodoItem/TodoItem";
+import TodoItem from "../TodoItemComponent/TodoItemComponent";
 export default function InputComponent() {
   //initializing input state variables
   const [input, setInput] = useState("");
