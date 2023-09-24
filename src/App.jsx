@@ -1,12 +1,12 @@
 import "./App.css";
-import HeaderComponent from "./HeaderComponent/HeaderComponent";
-import InputComponent from "./InputComponent/InputComponent";
+import Header from "./Header/Header";
+import TodoPage from "./TodoPage/TodoPage";
 
 function App() {
   return (
     <div className="App">
-      <HeaderComponent />
-      <InputComponent />
+      <Header />
+      <TodoPage />
     </div>
   );
 }
