@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.todoform {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+}
+.formInput {
+  width: 100%;
+  border: none;
+  display: block;
+  color: black;
+  font-size: 16px;
+  padding-right: 10px;
+  font-family: "Lato", sans-serif;
+}
+.formInput:focus {
+  outline: none;
+}
+.submitButton {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  font-family: "Lato", sans-serif;
+  background-color: #ffd52e;
+  padding: 12px 20px;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+}
+.inputContainer {
+  display: flex;
+}

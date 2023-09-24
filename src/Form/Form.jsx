@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./Form.module.css";
 // eslint-disable-next-line react/prop-types
 export default function Form({ todos, setTodos }) {
   //initializing input state variables
@@ -13,14 +14,20 @@ export default function Form({ todos, setTodos }) {
     setInput("");
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        //now user will be able to type into an input field
-        onChange={(e) => setInput(e.target.value)}
-        value={input}
-        type="text"
-      />
-      <button type="submit">Add</button>
+    <form className={styles.todoform} onSubmit={handleSubmit}>
+      <div className={styles.inputContainer}>
+        <input
+          className={styles.formInput}
+          //now user will be able to type into an input field
+          onChange={(e) => setInput(e.target.value)}
+          value={input}
+          type="text"
+          placeholder="Enter todo item"
+        />
+        <button className={styles.submitButton} type="submit">
+          Add
+        </button>
+      </div>
     </form>
   );
 }
