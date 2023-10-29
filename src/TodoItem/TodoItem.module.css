@@ -3,6 +3,7 @@
   font-size: 20px;
   font-family: "Raleway", sans-serif;
   padding: 20px;
+  font-weight: bold;
 }
 .item {
   width: 500px;
@@ -11,4 +12,13 @@
 }
 .line {
   border: 1px solid #f4f4f4;
+}
+.deleteButton {
+  float: right;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffd52e;
+  margin-top: -5px;
+  cursor: pointer;
 }

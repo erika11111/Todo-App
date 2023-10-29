@@ -7,7 +7,7 @@ export default function TodoPage() {
   return (
     <div>
       <FormComponent todos={todos} setTodos={setTodos} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos} />
     </div>
   );
 }
