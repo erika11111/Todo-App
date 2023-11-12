@@ -29,7 +29,7 @@ export default function TodoItem({ item, todos, setTodos }) {
         </span>
         <span>
           <button
-            onClick={() => handleDelete()}
+            onClick={() => handleDelete(item)}
             className={styles.deleteButton}
           >
             <IoMdRemove role="button" />
