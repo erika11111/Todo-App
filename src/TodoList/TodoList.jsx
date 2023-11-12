@@ -6,8 +6,13 @@ export default function TodoList({ todos, setTodos }) {
     <div className={styles.list}>
       {
         // eslint-disable-next-line react/prop-types
-        todos.map((item, index) => (
-          <TodoItem key={index} item={item} todos={todos} setTodos={setTodos} />
+        todos.map((item) => (
+          <TodoItem
+            key={item.name}
+            item={item}
+            todos={todos}
+            setTodos={setTodos}
+          />
         ))
       }
     </div>

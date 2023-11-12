@@ -22,3 +22,7 @@
   margin-top: -5px;
   cursor: pointer;
 }
+
+.completedItem {
+  text-decoration: line-through;
+}
