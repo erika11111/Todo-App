@@ -1,6 +1,6 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 import styles from "./Form.module.css";
-// eslint-disable-next-line react/prop-types
 export default function Form({ todos, setTodos }) {
   //initializing input state variables
   //const [input, setInput] = useState("");
@@ -33,3 +33,7 @@ export default function Form({ todos, setTodos }) {
     </form>
   );
 }
+Form.propTypes = {
+  todos: PropTypes.array,
+  setTodos: PropTypes.array,
+};
